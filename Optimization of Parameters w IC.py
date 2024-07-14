@@ -221,7 +221,7 @@ def tijmodelfn(astrains, Lamda, Rcs, Beta, a, N, Kappa, axk):
     tparams[7] = 0.3341
   
     #Rewriting parameter file using updataed parameter values
-  with open('Para.txt', 'w') as para:
+    with open('Para.txt', 'w') as para:
         arglist = ["Model       1", "iVersion    3", "iCyclic&iCreep      0", "iAssoc      3", "Elastic     N"]
         desc = ["[1: Subloading tij,    2: Cam clay]", "[0: original,    3: alternative, 4: alternative4]",
                 "[0: no-creep,        1: creep,       10: cyclic]",
